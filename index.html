@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Student Registration Home</title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+        	if (typeof jQuery == 'undefined') {
+		        document.write(unescape("%3Cscript src='../../Shared/jquery.js' type='text/javascript'%3E%3C/script%3E")); }
+        </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+        .jumbotron {
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
+            background: #87e0fd; /* Old browsers */
+            background: -moz-linear-gradient(top, #87e0fd 0%, #53cbf1 40%, #05abe0 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=0 ); /* IE6-9 */
+            h4 {
+                text-indent: 156px;
+            }
+        }
+        </style>
+
+  </head>
+  <body>
+    <div class="container-fluid" >
+
+      <div class="page-header">
+          <div class="jumbotron text-center">
+              <h1 >Loney University Student Registration Portal</h1></div>
+          </div>
+      </div>
+
+      <h2 class = "text-center">Click below to view and register for available classes</h2><br>
+    
+      <p class = "text-center"><br/><br/>    
+        <a href='getClasses.php' class ="btn btn-primary"> Register for a Class</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <a href='viewRegistered.php' class ="btn btn-primary"> View Registered Classes</a>       
+        </p><br/><br/><br/><br/>
+        <h3 class = "text-center">Administrative tasks</h3> 
+        <p class = "text-center"><br/><br/>    
+        <a href='maintainStudent.php' class ="btn btn-default"> Maintain Student Records</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        <a href='maintainClasses.php' class ="btn btn-default"> Maintain Class Records</a>        
+        </p>
+    </div>
+  </body>
+</html>
