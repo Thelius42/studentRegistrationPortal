@@ -52,7 +52,7 @@ include 'config/database.php';
 // delete message prompt will be here
 
 // select all data
-$query = "SELECT classID, className, classDescription, timeOfClass FROM registration.classes ORDER BY classID DESC";
+$query = "SELECT classID, className, classDescription, timeOfClass FROM classes ORDER BY classID DESC";
 $stmt = $con->prepare($query);
 $stmt->execute();
 

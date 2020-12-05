@@ -9,7 +9,7 @@ try {
 	$studentID=isset($_GET['studentID']) ? $_GET['studentID'] : die('ERROR: Record ID not found.');
 
 	// delete query
-	$query = "DELETE FROM registration.students WHERE studentID = ?";
+	$query = "DELETE FROM students WHERE studentID = ?";
 	$stmt = $con->prepare($query);
 	$stmt->bindParam(1, $studentID);
 	

@@ -67,7 +67,7 @@ catch(PDOException $exception){
 if($_POST){
 try{
     //prepare insert query
-    $query = "SELECT studentID FROM registration.Students WHERE studentID = :studentID LIMIT 0,1"; 
+    $query = "SELECT studentID FROM Students WHERE studentID = :studentID LIMIT 0,1"; 
     $stmt = $con->prepare( $query );
 
     $studentID=htmlspecialchars(strip_tags($_POST['studentID']));
@@ -83,7 +83,7 @@ try{
     if($exists){
         try{
             // insert query
-        $query = "INSERT INTO registration.class_student SET studentID=:studentID, classID=:classID";
+        $query = "INSERT INTO class_student SET studentID=:studentID, classID=:classID";
  
         // prepare query for execution
         $stmt = $con->prepare($query);

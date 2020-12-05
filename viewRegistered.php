@@ -60,7 +60,7 @@
     if($_POST){
         try{
         //prepare insert query
-        $query = "SELECT studentID FROM registration.Students WHERE studentID = :studentID LIMIT 0,1"; 
+        $query = "SELECT studentID FROM Students WHERE studentID = :studentID LIMIT 0,1"; 
         $stmt = $con->prepare( $query );
 
         $studentID=htmlspecialchars(strip_tags($_POST['studentID']));
@@ -77,8 +77,8 @@
         if($exists){
             // query to pull registered classes for the given student
             $query = "SELECT classes.classID, classes.className, classes.classDescription, classes.timeOfClass, class_student.studentID
-            FROM registration.classes
-            INNER JOIN registration.class_student ON registration.class_student.classID = registration.classes.classID            
+            FROM classes
+            INNER JOIN class_student ON class_student.classID = classes.classID            
             WHERE class_student.studentID = :studentID ";
             $stmt = $con->prepare($query);
 

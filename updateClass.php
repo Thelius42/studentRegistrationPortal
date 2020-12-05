@@ -55,7 +55,7 @@ include 'config/database.php';
 // read current record's data
 try {
 	// prepare select query
-	$query = "SELECT classID, className, classDescription, timeOfClass FROM registration.classes WHERE classID = ? LIMIT 0,1";
+	$query = "SELECT classID, className, classDescription, timeOfClass FROM classes WHERE classID = ? LIMIT 0,1";
 	$stmt = $con->prepare( $query );
 	
 	// this is the first question mark

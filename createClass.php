@@ -54,7 +54,7 @@ if($_POST){
     try{
      
         // insert query
-        $query = "INSERT INTO registration.classes SET classID=:classID, className=:className, classDescription=:classDescription, timeOfClass=:timeOfClass";
+        $query = "INSERT INTO classes SET classID=:classID, className=:className, classDescription=:classDescription, timeOfClass=:timeOfClass";
  
         // prepare query for execution
         $stmt = $con->prepare($query);

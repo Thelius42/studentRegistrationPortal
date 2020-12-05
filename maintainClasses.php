@@ -55,7 +55,7 @@ if($action=='deleted'){
 }
 
 // select all data
-$query = "SELECT classID, className, classDescription, timeOfClass FROM registration.classes ORDER BY classID ";
+$query = "SELECT classID, className, classDescription, timeOfClass FROM classes ORDER BY classID ";
 $stmt = $con->prepare($query);
 $stmt->execute();
 

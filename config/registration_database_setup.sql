@@ -21,6 +21,7 @@ CREATE TABLE class_student (
 	studentID int NOT NULL,
 	classID varchar(5) NOT NULL,
 	PRIMARY KEY (regID)
+	CONSTRAINT Uniq_reg UNIQUE (studentID, classID)
 );
 	
 

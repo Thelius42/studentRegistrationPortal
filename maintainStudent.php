@@ -56,7 +56,7 @@ if($action=='deleted'){
 }
 
 // select all data
-$query = "SELECT studentID, lastName, firstName FROM registration.students ORDER BY lastName";
+$query = "SELECT studentID, lastName, firstName FROM students ORDER BY lastName";
 $stmt = $con->prepare($query);
 $stmt->execute();
 

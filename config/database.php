@@ -1,7 +1,7 @@
 <?php
 // used to connect to the database
 $host = "localhost";
-$db_name = "MySQL";
+$db_name = "registration";
 $username = "Thelius";
 $password = "Jujub3@n";
   

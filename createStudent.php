@@ -52,7 +52,7 @@ if($_POST){
     try{
      
         // insert query
-        $query = "INSERT INTO registration.students SET studentID=:studentID, lastName=:lastName, firstName=:firstName";
+        $query = "INSERT INTO students SET studentID=:studentID, lastName=:lastName, firstName=:firstName";
  
         // prepare query for execution
         $stmt = $con->prepare($query);
