@@ -60,7 +60,7 @@
     if($_POST){
         try{
         //prepare insert query
-        $query = "SELECT studentID FROM Students WHERE studentID = :studentID LIMIT 0,1"; 
+        $query = "SELECT studentID FROM students WHERE studentID = :studentID LIMIT 0,1"; 
         $stmt = $con->prepare( $query );
 
         $studentID=htmlspecialchars(strip_tags($_POST['studentID']));
